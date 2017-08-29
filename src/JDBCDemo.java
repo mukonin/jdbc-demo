@@ -12,8 +12,8 @@ public class JDBCDemo {
 
 		try (Connection connection = DriverManager
 				.getConnection(
-						"jdbc:postgresql://172.16.2.253:5432/academy", "user1",
-						"password1");
+						"jdbc:postgresql://address:port/database_name", "username",
+						"password");
 		     Statement statement = connection.createStatement();
 		     ResultSet resultSet = statement.executeQuery("SELECT * FROM users")) {
 
